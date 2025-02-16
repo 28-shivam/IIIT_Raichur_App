@@ -34,8 +34,17 @@ class LoginScreen extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   // 3D Illustration Placeholder
-                  Image.asset("assets/login_illustration.png", height: 150),
-
+                  // Image.asset("assets/login_page.png", height: 150),
+                  Container(
+                    width: 400,
+                    height: 200,
+                    decoration: BoxDecoration(
+                      image: DecorationImage(
+                        image: AssetImage("assets/login_page.png"),
+                        fit: BoxFit.cover,
+                      ),
+                    ),
+                  ),
                   SizedBox(height: 20),
                   Text(
                     "Welcome Back!",
